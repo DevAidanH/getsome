@@ -1,0 +1,291 @@
+html
+{
+    min-height: 100%;
+}
+.body, .bodyA
+{
+    background-image: linear-gradient(45deg, #C2B7F3,#A8EEED );
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+/*Login Page CSS*/
+.panel
+{
+    float: right;
+    text-align: center;
+    margin: 3%;
+    padding: 0%;
+}
+.logo
+{
+    width: 20vw;
+}
+.panel .heading h1
+{
+    font-size: 1.5rem;
+}
+.loginInput, .regInput, .input
+{
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5rem
+}
+.login, .register, .reg, .regCancel, .alertButton
+{
+    background: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 10px;
+    border: 5px solid #38d39f;
+    transition: 0.5s;
+}
+.register, .regCancel
+{
+    padding: 5px 20px;
+    font-size: 1.5rem;
+}   
+.login:hover, .register:hover, .reg:hover, .regCancel:hover, .alertButton:hover
+{
+    background: #38d39f;
+    transition: 0.5s;
+}
+.smallImage
+{
+    text-align: center;
+    visibility: hidden;
+}
+.smallImage img
+{
+    width: 50%;
+}
+/*Labels for reg page*/
+.regSubLabel, .regLabel
+{
+    font-size: 1.1rem;
+}
+.regSubLabel span
+{
+    color: red;
+}
+/*Type wheel css*/
+.textType .txt
+{
+    border-right: 1px solid black;
+}
+.sideImage img
+{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 60%;
+    z-index: -5;
+}
+.sideImage :nth-child(1)
+{
+    width: 50%;
+}
+/*Profile page settings*/
+.containerProfile
+{
+    text-align: center;
+    margin: 0 auto;
+}
+.caps
+{
+    text-transform: capitalize;
+}
+.containerProfile form
+{
+    width: 100%;
+}
+.containerProfile h1
+{
+    font-size: 2.5rem;
+}
+table
+{
+    margin: 0 auto;
+    border-spacing:0 10px; 
+}
+.addTask
+{
+	border: none;
+	font-size: 1.5rem;
+	background: #fff;
+	color: #000;
+	padding: 8px 6px;
+    border-radius: 50px;
+    position: relative;
+
+}
+.task
+{
+    font-size: 1.3rem;
+    background: #fff;
+	padding: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    cursor: context-menu;
+    width: 400px;
+    border-radius: 10px;
+}
+.task a i
+{
+    text-decoration: none;
+    display: block;
+    color: #FF002C;
+    float: right;
+    margin-left: 15px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.task a i:hover
+{
+    color: #000
+}
+.task a span i
+{
+    color: #34B93D;
+    font-size: 30px;
+    float: right;
+}
+/*Side Settings*/
+.accountSettings
+{
+    text-align: center;
+}
+.accountSettings .settingsButton
+{
+    font-size: 4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.sideNav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7); 
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+}
+.sideNav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.deleteButton, .passwordButton, .logButton
+{
+    font-size: 1.3rem;
+    width: 90%;
+    border: 5px solid #38d39f;
+    transition: 0.5s;
+    background: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    color: #fff;
+}
+.deleteButton:hover, .passwordButton:hover, .savePassword:hover
+{
+    background: #38d39f;
+    transition: 0.5s;
+    color:  #000;
+}
+.newPasswordInput
+{
+    font-size: 1.1rem;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 5px;
+}
+.savePassword, .cancelPassword
+{
+    font-size: 1.3rem;
+    margin: 5px;
+    border: 5px solid #38d39f;
+    transition: 0.5s;
+    background: none;
+    border-radius: 15px;
+    color: #fff;
+}
+.cancelPassword
+{
+    border: 5px solid #FF002C;
+}
+.logButton
+{
+    margin-top: 25px;
+    border: 5px solid #FF002C;
+}
+.logButton:hover, .cancelPassword:hover
+{
+    background: #FF002C;
+    transition: 0.5s;
+}
+/*Settings up hidden menus for profile page */
+#passwordMenu
+{
+    display: none;
+    text-align: left;
+    color: #fff;
+    width: 90%;
+}
+/*Alert Settings*/
+.bodyA
+{
+    text-align: center;
+}
+/*Media Setup*/
+@media (max-width: 800px) 
+{
+    .panel
+    {
+        margin: 10%;
+        float: none;
+    }
+    .sideImage
+    {
+        display: none;
+    }
+    .logo
+    {
+        width: 60vw;
+    }
+    .loginInput, .regInput
+    {
+        margin: 30px 0 0 0;
+        width: 90%;
+    }
+    .regInput
+    {
+        margin: 10px 0 0 0;
+    }
+    .task
+    {
+        width: 350px;
+    }
+    .smallImage
+    {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register a new account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
+</head>
+
+<body class="body">
+    <div class="panel">
+        <img class="logo" src="Images/logo.png" />
+        <div class="heading">
+            <h1><span class="textType" data-wait="3000"
+                    data-words='["Sign up below", "Register now!", "Join totally free"]'></span></h1>
+        </div>
+
+        <form action="newAccount.php" method="POST">
+            <label class="regSubLabel">Please enter a new username <br /><span>It must not contain <u>numbers</u> <br />
+                    and be <u>unique</u> to you</span></label><br />
+            <input class="regInput" type="text" name="username" placeholder="New Username..." />
+            <br />
+            <label class="regLabel">Please enter a new password</label><br />
+            <input class="regInput" type="password" name="password" placeholder="Password..." />
+            <br />
+            <input class="reg" type="submit" value="Submit">
+        </form>
+        <button class="regCancel" onclick="window.location.href='index.html'">Cancel</button>
+    </div>
+
+    <div class="sideImage">
+        <img src="Images/checklist3.svg" />
+    </div>
+
+    <div class="smallImage">
+        <img src="Images/flowerPot2.svg" />
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

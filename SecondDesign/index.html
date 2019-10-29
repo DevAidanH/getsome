@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Loign to Get Some - Your to-do App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
+</head>
+
+<body class="body">
+    <div class="panel">
+        <img class="logo" src="Images/logo.png" />
+        <div class="heading">
+            <h1><span class="textType" data-wait="3000"
+                    data-words='["The to do list app", "A productivity tool", "A pretty cool website"]'></span></h1>
+        </div>
+        <h2>Please Log in below</h2>
+
+        <form action="login.php" method="POST">
+            <input class="loginInput" type="text" name="usernameInput" placeholder="Username..." />
+            <br />
+            <input class="loginInput" type="password" name="passwordInput" placeholder="Password..." />
+            <br />
+            <input class="login" type="submit" value="Login" />
+        </form>
+
+        <button class="register" onclick="window.location.href='register.html'">Create new account</button>
+    </div>
+
+    <div class="sideImage">
+        <img src="Images/checklist2.svg" />
+    </div>
+
+    <div class="smallImage">
+        <img src="Images/flowerPot2.svg" />
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
