@@ -1,2 +1,2 @@
-# getsome
-A complex full stack to do list site with php sql
+# Get Some
+This project is called Get Some. I started this project to learn some backend development as well as creating a web app I could use to organize my days exactly how I wanted. I used HTML and php to write the bulk of the site. The database was constructed using SQL and developed on a local xampp server. Then I used CSS to style the site. This project features synced data between your devices, Responsive minimalistic design, the ability for the user to create an account and login, account control options like password changing for the user plus deleting and add items to a specific database. To test this site go to someapp.000webhostapp.com and create a user account.
